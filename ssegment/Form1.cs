@@ -81,9 +81,10 @@ namespace ssegment
             vis(sen3);
         }
 
-        private void forFive_(Button sen1, Button sen2)
+        private void forFive_right1_lef2(Button sen1, Button sen2)
         {
-
+            vis(sen1);
+            vis(sen2);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -93,7 +94,9 @@ namespace ssegment
 
             //forThree_lef1_lef2(hr1_left1_btn, hr1_left2_btn);
 
-            forFour_top_lef2_bot(hr1_top_btn,hr1_left2_btn ,hr1_bot_btn );
+            // forFour_top_lef2_bot(hr1_top_btn,hr1_left2_btn ,hr1_bot_btn );
+
+            forFive_right1_lef2(hr1_right1_btn, hr1_left2_btn);
 
 
         }
