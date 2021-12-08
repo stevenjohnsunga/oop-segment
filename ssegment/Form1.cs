@@ -42,6 +42,20 @@ namespace ssegment
         }
 
 
+        private void grpALLTRU(GroupBox sen)
+        {
+            foreach (Control xx in sen.Controls)
+            {
+                if (xx is Button)
+                {
+                    xx.Visible = true;
+                }
+            }
+        }
+
+        
+      
+
         private void forOne_Top_Left1_Left2_MID_BOT(Button sender, Button sender1, Button sender2, Button sender3,Button sender4)
         {
             //top
@@ -87,6 +101,30 @@ namespace ssegment
             vis(sen2);
         }
 
+        private void forSix_right1(Button sen1)
+        {
+            vis(sen1);
+        }
+        private void forSeven_lef11_lef2_mid_bot(Button sen1, Button sen2, Button sen3, Button sen4)
+        {
+            vis(sen1);
+            vis(sen2);
+            vis(sen3);
+            vis(sen4);
+        }
+        
+        private void forNine_lef2_bot(Button sen1,Button sen2)
+        {
+            vis(sen1);
+            vis(sen2);
+        }
+
+        private void forZero_mid(Button sen1)
+        {
+            vis(sen1);
+        }
+
+       
         private void Form1_Load(object sender, EventArgs e)
         {
             // forOne_Top_Left1_Left2_MID_BOT(hr1_top_btn,hr1_left1_btn,hr1_left2_btn,hr1_mid_btn,hr1_bot_btn);
@@ -96,9 +134,9 @@ namespace ssegment
 
             // forFour_top_lef2_bot(hr1_top_btn,hr1_left2_btn ,hr1_bot_btn );
 
-            forFive_right1_lef2(hr1_right1_btn, hr1_left2_btn);
+            // forFive_right1_lef2(hr1_right1_btn, hr1_left2_btn);
 
-
+          
         }
 
         private void hr1_top_btn_MouseEnter(object sender, EventArgs e)
@@ -184,9 +222,15 @@ namespace ssegment
         {
             ChangeLeave(hr1_left2_btn);
         }
+        int cnt = 0;
+        string mysec;
 
-        private void hr2_lef2_btn_Click(object sender, EventArgs e)
+        int scs=0;
+        private void timer1_Tick(object sender, EventArgs e)
         {
+            cnt += 1;
+            mysec = DateTime.Now.ToString("ss");
+            scs = Convert.ToInt32(mysec.Substring(mysec.Length - 1));
 
         }
     }
