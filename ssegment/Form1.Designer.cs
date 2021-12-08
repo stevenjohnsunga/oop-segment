@@ -272,7 +272,7 @@ namespace ssegment
             this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.button1.Enabled = false;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(439, 211);
+            this.button1.Location = new System.Drawing.Point(402, 179);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(40, 40);
             this.button1.TabIndex = 15;
@@ -284,7 +284,7 @@ namespace ssegment
             this.button2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.button2.Enabled = false;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(439, 268);
+            this.button2.Location = new System.Drawing.Point(402, 236);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 40);
             this.button2.TabIndex = 16;
@@ -296,7 +296,7 @@ namespace ssegment
             this.button17.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.button17.Enabled = false;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(864, 268);
+            this.button17.Location = new System.Drawing.Point(827, 236);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(40, 40);
             this.button17.TabIndex = 32;
@@ -308,7 +308,7 @@ namespace ssegment
             this.button18.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.button18.Enabled = false;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(864, 211);
+            this.button18.Location = new System.Drawing.Point(827, 179);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(40, 40);
             this.button18.TabIndex = 31;
@@ -324,7 +324,7 @@ namespace ssegment
             this.groupBox1.Controls.Add(this.hr1_right2_btn);
             this.groupBox1.Controls.Add(this.hr1_bot_btn);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(12, 101);
+            this.groupBox1.Location = new System.Drawing.Point(12, 69);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(191, 365);
             this.groupBox1.TabIndex = 75;
@@ -339,7 +339,7 @@ namespace ssegment
             this.groupBox2.Controls.Add(this.hr2_mid_btn);
             this.groupBox2.Controls.Add(this.hr2_rig1_btn);
             this.groupBox2.Controls.Add(this.hr2_top_btn);
-            this.groupBox2.Location = new System.Drawing.Point(209, 101);
+            this.groupBox2.Location = new System.Drawing.Point(209, 69);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(176, 365);
             this.groupBox2.TabIndex = 76;
@@ -354,7 +354,7 @@ namespace ssegment
             this.groupBox3.Controls.Add(this.mm2mid);
             this.groupBox3.Controls.Add(this.mm2r1btn);
             this.groupBox3.Controls.Add(this.mm2top);
-            this.groupBox3.Location = new System.Drawing.Point(682, 101);
+            this.groupBox3.Location = new System.Drawing.Point(645, 69);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(176, 365);
             this.groupBox3.TabIndex = 78;
@@ -447,7 +447,7 @@ namespace ssegment
             this.groupBox4.Controls.Add(this.mm1r2btn);
             this.groupBox4.Controls.Add(this.mm1botbtn);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox4.Location = new System.Drawing.Point(485, 101);
+            this.groupBox4.Location = new System.Drawing.Point(448, 69);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(191, 365);
             this.groupBox4.TabIndex = 77;
@@ -539,7 +539,7 @@ namespace ssegment
             this.groupBox5.Controls.Add(this.ss2mid);
             this.groupBox5.Controls.Add(this.ss2r1);
             this.groupBox5.Controls.Add(this.ss2top);
-            this.groupBox5.Location = new System.Drawing.Point(1107, 101);
+            this.groupBox5.Location = new System.Drawing.Point(1070, 69);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(176, 365);
             this.groupBox5.TabIndex = 80;
@@ -632,7 +632,7 @@ namespace ssegment
             this.groupBox6.Controls.Add(this.ss1r2);
             this.groupBox6.Controls.Add(this.ss1bot);
             this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox6.Location = new System.Drawing.Point(910, 101);
+            this.groupBox6.Location = new System.Drawing.Point(873, 69);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(191, 365);
             this.groupBox6.TabIndex = 79;
@@ -728,7 +728,7 @@ namespace ssegment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1298, 500);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox5);
