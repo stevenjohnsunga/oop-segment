@@ -52,21 +52,21 @@ namespace ssegment
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.mm2l1btn = new System.Windows.Forms.Button();
-            this.mm2r2btn = new System.Windows.Forms.Button();
+            this.mm2l1 = new System.Windows.Forms.Button();
+            this.mm2r2 = new System.Windows.Forms.Button();
             this.mm2bot = new System.Windows.Forms.Button();
-            this.mm2l2btn = new System.Windows.Forms.Button();
+            this.mm2l2 = new System.Windows.Forms.Button();
             this.mm2mid = new System.Windows.Forms.Button();
-            this.mm2r1btn = new System.Windows.Forms.Button();
+            this.mm2r1 = new System.Windows.Forms.Button();
             this.mm2top = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.mm1topbtn = new System.Windows.Forms.Button();
-            this.mm1l1btn = new System.Windows.Forms.Button();
-            this.mm1r1btn = new System.Windows.Forms.Button();
-            this.mm1midbtn = new System.Windows.Forms.Button();
-            this.mm1l2btn = new System.Windows.Forms.Button();
-            this.mm1r2btn = new System.Windows.Forms.Button();
-            this.mm1botbtn = new System.Windows.Forms.Button();
+            this.mm1top = new System.Windows.Forms.Button();
+            this.mm1l1 = new System.Windows.Forms.Button();
+            this.mm1r1 = new System.Windows.Forms.Button();
+            this.mm1mid = new System.Windows.Forms.Button();
+            this.mm1l2 = new System.Windows.Forms.Button();
+            this.mm1r2 = new System.Windows.Forms.Button();
+            this.mm1bot = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.ss2l1 = new System.Windows.Forms.Button();
             this.ss2r2 = new System.Windows.Forms.Button();
@@ -243,6 +243,7 @@ namespace ssegment
             this.hr2_rig1_btn.Size = new System.Drawing.Size(40, 167);
             this.hr2_rig1_btn.TabIndex = 10;
             this.hr2_rig1_btn.UseVisualStyleBackColor = false;
+            this.hr2_rig1_btn.Click += new System.EventHandler(this.hr2_rig1_btn_Click);
             // 
             // hr2_lef1_btn
             // 
@@ -347,12 +348,12 @@ namespace ssegment
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.mm2l1btn);
-            this.groupBox3.Controls.Add(this.mm2r2btn);
+            this.groupBox3.Controls.Add(this.mm2l1);
+            this.groupBox3.Controls.Add(this.mm2r2);
             this.groupBox3.Controls.Add(this.mm2bot);
-            this.groupBox3.Controls.Add(this.mm2l2btn);
+            this.groupBox3.Controls.Add(this.mm2l2);
             this.groupBox3.Controls.Add(this.mm2mid);
-            this.groupBox3.Controls.Add(this.mm2r1btn);
+            this.groupBox3.Controls.Add(this.mm2r1);
             this.groupBox3.Controls.Add(this.mm2top);
             this.groupBox3.Location = new System.Drawing.Point(645, 69);
             this.groupBox3.Name = "groupBox3";
@@ -360,27 +361,27 @@ namespace ssegment
             this.groupBox3.TabIndex = 78;
             this.groupBox3.TabStop = false;
             // 
-            // mm2l1btn
+            // mm2l1
             // 
-            this.mm2l1btn.BackColor = System.Drawing.Color.Maroon;
-            this.mm2l1btn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm2l1btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm2l1btn.Location = new System.Drawing.Point(9, 23);
-            this.mm2l1btn.Name = "mm2l1btn";
-            this.mm2l1btn.Size = new System.Drawing.Size(40, 167);
-            this.mm2l1btn.TabIndex = 9;
-            this.mm2l1btn.UseVisualStyleBackColor = false;
+            this.mm2l1.BackColor = System.Drawing.Color.Maroon;
+            this.mm2l1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm2l1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm2l1.Location = new System.Drawing.Point(9, 23);
+            this.mm2l1.Name = "mm2l1";
+            this.mm2l1.Size = new System.Drawing.Size(40, 167);
+            this.mm2l1.TabIndex = 9;
+            this.mm2l1.UseVisualStyleBackColor = false;
             // 
-            // mm2r2btn
+            // mm2r2
             // 
-            this.mm2r2btn.BackColor = System.Drawing.Color.Maroon;
-            this.mm2r2btn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm2r2btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm2r2btn.Location = new System.Drawing.Point(126, 190);
-            this.mm2r2btn.Name = "mm2r2btn";
-            this.mm2r2btn.Size = new System.Drawing.Size(40, 167);
-            this.mm2r2btn.TabIndex = 13;
-            this.mm2r2btn.UseVisualStyleBackColor = false;
+            this.mm2r2.BackColor = System.Drawing.Color.Maroon;
+            this.mm2r2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm2r2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm2r2.Location = new System.Drawing.Point(126, 190);
+            this.mm2r2.Name = "mm2r2";
+            this.mm2r2.Size = new System.Drawing.Size(40, 167);
+            this.mm2r2.TabIndex = 13;
+            this.mm2r2.UseVisualStyleBackColor = false;
             // 
             // mm2bot
             // 
@@ -393,16 +394,16 @@ namespace ssegment
             this.mm2bot.TabIndex = 14;
             this.mm2bot.UseVisualStyleBackColor = false;
             // 
-            // mm2l2btn
+            // mm2l2
             // 
-            this.mm2l2btn.BackColor = System.Drawing.Color.Maroon;
-            this.mm2l2btn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm2l2btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm2l2btn.Location = new System.Drawing.Point(9, 190);
-            this.mm2l2btn.Name = "mm2l2btn";
-            this.mm2l2btn.Size = new System.Drawing.Size(40, 167);
-            this.mm2l2btn.TabIndex = 12;
-            this.mm2l2btn.UseVisualStyleBackColor = false;
+            this.mm2l2.BackColor = System.Drawing.Color.Maroon;
+            this.mm2l2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm2l2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm2l2.Location = new System.Drawing.Point(9, 190);
+            this.mm2l2.Name = "mm2l2";
+            this.mm2l2.Size = new System.Drawing.Size(40, 167);
+            this.mm2l2.TabIndex = 12;
+            this.mm2l2.UseVisualStyleBackColor = false;
             // 
             // mm2mid
             // 
@@ -415,16 +416,16 @@ namespace ssegment
             this.mm2mid.TabIndex = 11;
             this.mm2mid.UseVisualStyleBackColor = false;
             // 
-            // mm2r1btn
+            // mm2r1
             // 
-            this.mm2r1btn.BackColor = System.Drawing.Color.Maroon;
-            this.mm2r1btn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm2r1btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm2r1btn.Location = new System.Drawing.Point(127, 23);
-            this.mm2r1btn.Name = "mm2r1btn";
-            this.mm2r1btn.Size = new System.Drawing.Size(40, 167);
-            this.mm2r1btn.TabIndex = 10;
-            this.mm2r1btn.UseVisualStyleBackColor = false;
+            this.mm2r1.BackColor = System.Drawing.Color.Maroon;
+            this.mm2r1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm2r1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm2r1.Location = new System.Drawing.Point(127, 23);
+            this.mm2r1.Name = "mm2r1";
+            this.mm2r1.Size = new System.Drawing.Size(40, 167);
+            this.mm2r1.TabIndex = 10;
+            this.mm2r1.UseVisualStyleBackColor = false;
             // 
             // mm2top
             // 
@@ -439,13 +440,13 @@ namespace ssegment
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.mm1topbtn);
-            this.groupBox4.Controls.Add(this.mm1l1btn);
-            this.groupBox4.Controls.Add(this.mm1r1btn);
-            this.groupBox4.Controls.Add(this.mm1midbtn);
-            this.groupBox4.Controls.Add(this.mm1l2btn);
-            this.groupBox4.Controls.Add(this.mm1r2btn);
-            this.groupBox4.Controls.Add(this.mm1botbtn);
+            this.groupBox4.Controls.Add(this.mm1top);
+            this.groupBox4.Controls.Add(this.mm1l1);
+            this.groupBox4.Controls.Add(this.mm1r1);
+            this.groupBox4.Controls.Add(this.mm1mid);
+            this.groupBox4.Controls.Add(this.mm1l2);
+            this.groupBox4.Controls.Add(this.mm1r2);
+            this.groupBox4.Controls.Add(this.mm1bot);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Location = new System.Drawing.Point(448, 69);
             this.groupBox4.Name = "groupBox4";
@@ -453,82 +454,82 @@ namespace ssegment
             this.groupBox4.TabIndex = 77;
             this.groupBox4.TabStop = false;
             // 
-            // mm1topbtn
+            // mm1top
             // 
-            this.mm1topbtn.BackColor = System.Drawing.Color.Maroon;
-            this.mm1topbtn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm1topbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm1topbtn.Location = new System.Drawing.Point(55, 22);
-            this.mm1topbtn.Name = "mm1topbtn";
-            this.mm1topbtn.Size = new System.Drawing.Size(79, 36);
-            this.mm1topbtn.TabIndex = 1;
-            this.mm1topbtn.UseVisualStyleBackColor = false;
+            this.mm1top.BackColor = System.Drawing.Color.Maroon;
+            this.mm1top.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm1top.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm1top.Location = new System.Drawing.Point(55, 22);
+            this.mm1top.Name = "mm1top";
+            this.mm1top.Size = new System.Drawing.Size(79, 36);
+            this.mm1top.TabIndex = 1;
+            this.mm1top.UseVisualStyleBackColor = false;
             // 
-            // mm1l1btn
+            // mm1l1
             // 
-            this.mm1l1btn.BackColor = System.Drawing.Color.Maroon;
-            this.mm1l1btn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm1l1btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm1l1btn.Location = new System.Drawing.Point(16, 22);
-            this.mm1l1btn.Name = "mm1l1btn";
-            this.mm1l1btn.Size = new System.Drawing.Size(40, 167);
-            this.mm1l1btn.TabIndex = 2;
-            this.mm1l1btn.UseVisualStyleBackColor = false;
+            this.mm1l1.BackColor = System.Drawing.Color.Maroon;
+            this.mm1l1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm1l1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm1l1.Location = new System.Drawing.Point(16, 22);
+            this.mm1l1.Name = "mm1l1";
+            this.mm1l1.Size = new System.Drawing.Size(40, 167);
+            this.mm1l1.TabIndex = 2;
+            this.mm1l1.UseVisualStyleBackColor = false;
             // 
-            // mm1r1btn
+            // mm1r1
             // 
-            this.mm1r1btn.BackColor = System.Drawing.Color.Maroon;
-            this.mm1r1btn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm1r1btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm1r1btn.Location = new System.Drawing.Point(134, 22);
-            this.mm1r1btn.Name = "mm1r1btn";
-            this.mm1r1btn.Size = new System.Drawing.Size(40, 167);
-            this.mm1r1btn.TabIndex = 3;
-            this.mm1r1btn.UseVisualStyleBackColor = false;
+            this.mm1r1.BackColor = System.Drawing.Color.Maroon;
+            this.mm1r1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm1r1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm1r1.Location = new System.Drawing.Point(134, 22);
+            this.mm1r1.Name = "mm1r1";
+            this.mm1r1.Size = new System.Drawing.Size(40, 167);
+            this.mm1r1.TabIndex = 3;
+            this.mm1r1.UseVisualStyleBackColor = false;
             // 
-            // mm1midbtn
+            // mm1mid
             // 
-            this.mm1midbtn.BackColor = System.Drawing.Color.Maroon;
-            this.mm1midbtn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm1midbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm1midbtn.Location = new System.Drawing.Point(55, 170);
-            this.mm1midbtn.Name = "mm1midbtn";
-            this.mm1midbtn.Size = new System.Drawing.Size(79, 36);
-            this.mm1midbtn.TabIndex = 4;
-            this.mm1midbtn.UseVisualStyleBackColor = false;
+            this.mm1mid.BackColor = System.Drawing.Color.Maroon;
+            this.mm1mid.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm1mid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm1mid.Location = new System.Drawing.Point(55, 170);
+            this.mm1mid.Name = "mm1mid";
+            this.mm1mid.Size = new System.Drawing.Size(79, 36);
+            this.mm1mid.TabIndex = 4;
+            this.mm1mid.UseVisualStyleBackColor = false;
             // 
-            // mm1l2btn
+            // mm1l2
             // 
-            this.mm1l2btn.BackColor = System.Drawing.Color.Maroon;
-            this.mm1l2btn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm1l2btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm1l2btn.Location = new System.Drawing.Point(16, 189);
-            this.mm1l2btn.Name = "mm1l2btn";
-            this.mm1l2btn.Size = new System.Drawing.Size(40, 167);
-            this.mm1l2btn.TabIndex = 5;
-            this.mm1l2btn.UseVisualStyleBackColor = false;
+            this.mm1l2.BackColor = System.Drawing.Color.Maroon;
+            this.mm1l2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm1l2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm1l2.Location = new System.Drawing.Point(16, 189);
+            this.mm1l2.Name = "mm1l2";
+            this.mm1l2.Size = new System.Drawing.Size(40, 167);
+            this.mm1l2.TabIndex = 5;
+            this.mm1l2.UseVisualStyleBackColor = false;
             // 
-            // mm1r2btn
+            // mm1r2
             // 
-            this.mm1r2btn.BackColor = System.Drawing.Color.Maroon;
-            this.mm1r2btn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm1r2btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm1r2btn.Location = new System.Drawing.Point(134, 189);
-            this.mm1r2btn.Name = "mm1r2btn";
-            this.mm1r2btn.Size = new System.Drawing.Size(40, 167);
-            this.mm1r2btn.TabIndex = 6;
-            this.mm1r2btn.UseVisualStyleBackColor = false;
+            this.mm1r2.BackColor = System.Drawing.Color.Maroon;
+            this.mm1r2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm1r2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm1r2.Location = new System.Drawing.Point(134, 189);
+            this.mm1r2.Name = "mm1r2";
+            this.mm1r2.Size = new System.Drawing.Size(40, 167);
+            this.mm1r2.TabIndex = 6;
+            this.mm1r2.UseVisualStyleBackColor = false;
             // 
-            // mm1botbtn
+            // mm1bot
             // 
-            this.mm1botbtn.BackColor = System.Drawing.Color.Maroon;
-            this.mm1botbtn.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.mm1botbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.mm1botbtn.Location = new System.Drawing.Point(55, 320);
-            this.mm1botbtn.Name = "mm1botbtn";
-            this.mm1botbtn.Size = new System.Drawing.Size(105, 36);
-            this.mm1botbtn.TabIndex = 7;
-            this.mm1botbtn.UseVisualStyleBackColor = false;
+            this.mm1bot.BackColor = System.Drawing.Color.Maroon;
+            this.mm1bot.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.mm1bot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mm1bot.Location = new System.Drawing.Point(55, 320);
+            this.mm1bot.Name = "mm1bot";
+            this.mm1bot.Size = new System.Drawing.Size(105, 36);
+            this.mm1bot.TabIndex = 7;
+            this.mm1bot.UseVisualStyleBackColor = false;
             // 
             // groupBox5
             // 
@@ -745,6 +746,7 @@ namespace ssegment
             this.Margin = new System.Windows.Forms.Padding(7, 5, 7, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Timer  in segmented buttons";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -781,21 +783,21 @@ namespace ssegment
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button mm2l1btn;
-        private System.Windows.Forms.Button mm2r2btn;
+        private System.Windows.Forms.Button mm2l1;
+        private System.Windows.Forms.Button mm2r2;
         private System.Windows.Forms.Button mm2bot;
-        private System.Windows.Forms.Button mm2l2btn;
+        private System.Windows.Forms.Button mm2l2;
         private System.Windows.Forms.Button mm2mid;
-        private System.Windows.Forms.Button mm2r1btn;
+        private System.Windows.Forms.Button mm2r1;
         private System.Windows.Forms.Button mm2top;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button mm1topbtn;
-        private System.Windows.Forms.Button mm1l1btn;
-        private System.Windows.Forms.Button mm1r1btn;
-        private System.Windows.Forms.Button mm1midbtn;
-        private System.Windows.Forms.Button mm1l2btn;
-        private System.Windows.Forms.Button mm1r2btn;
-        private System.Windows.Forms.Button mm1botbtn;
+        private System.Windows.Forms.Button mm1top;
+        private System.Windows.Forms.Button mm1l1;
+        private System.Windows.Forms.Button mm1r1;
+        private System.Windows.Forms.Button mm1mid;
+        private System.Windows.Forms.Button mm1l2;
+        private System.Windows.Forms.Button mm1r2;
+        private System.Windows.Forms.Button mm1bot;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button ss2l1;
         private System.Windows.Forms.Button ss2r2;

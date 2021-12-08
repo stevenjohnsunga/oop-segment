@@ -190,9 +190,13 @@ namespace ssegment
         int scs = 0;  //stores the value of time(hh,mm,ss)
         private void timer1_Tick(object sender, EventArgs e)
         {
-            cnt += 1; //increment
+            cnt += 1; //increments for time
             ss2(); //calls the function for second column for seconds
             ss1(); //calls the function for first column for seconds
+            mm1(); //calls the function for first column for mins
+            mm2(); //calls the function for second column for minns
+            hh1(); //calls the function for first column for hours
+            hh2(); //calls the function for second column for houurs
         }
         private void ss2() //function for second column for seconds
         {
@@ -305,26 +309,234 @@ namespace ssegment
         private void mm1() //function for firstt column for minss
         {
             mysec = DateTime.Now.ToString("mm");
-            scs = Convert.ToInt32(mysec.Substring(mysec.Length-1));
+            scs = Convert.ToInt32(mysec.Substring(0,1));
+            if (scs == 0)
+            {
+                grpALLTRU(groupBox4);
+                forZero_mid(mm1mid);
+            }
+            else if (scs == 1)
+            {
+                grpALLTRU(groupBox4);
+                forOne_Top_Left1_Left2_MID_BOT(mm1top, mm1l1, mm1l2, mm1mid, mm1bot);
+               
+            }
+            else if (scs == 2)
+            {
+                grpALLTRU(groupBox4);
+                forTwo_Lef1_rig2(mm1l1, mm1r2);
+            }
+            else if (scs == 3)
+            {
+                grpALLTRU(groupBox4);
+                forThree_lef1_lef2(mm1l1, mm1l2);
+            }
+            else if (scs == 4)
+            {
+                grpALLTRU(groupBox4);
+                forFour_top_lef2_bot(mm1top ,mm1l2,mm1bot);
+            }
+            else if (scs == 5)
+            {
+                grpALLTRU(groupBox4);
+                forFive_right1_lef2(mm1r1, mm1l2);
+            }
+            else if (scs == 6)
+            {
+                grpALLTRU(groupBox4);
+                forSix_right1(mm1r1);
+            }
+            else if (scs == 7)
+            {
+                grpALLTRU(groupBox4);
+                forSeven_lef11_lef2_mid_bot(mm1l1,mm1l2,mm1mid,mm1bot);
+            }
+            else if (scs == 8)
+            {
+
+                grpALLTRU(groupBox4);
+            }
+            else if (scs == 9)
+            {
+                grpALLTRU(groupBox4);
+                forNine_lef2_bot(mm1l2,mm1bot);
+            }
         }
         
         private void mm2() //function for second column for mins
         {
             mysec = DateTime.Now.ToString("mm");
-            scs = Convert.ToInt32(mysec.Substring(0, 1));
+            scs = Convert.ToInt32(mysec.Substring(mysec.Length-1));
+
+            if (scs == 0)
+            {
+                grpALLTRU(groupBox3);
+                forZero_mid(mm2mid);
+            }
+            else if (scs == 1)
+            {
+                grpALLTRU(groupBox3);
+                forOne_Top_Left1_Left2_MID_BOT(mm2top, mm2l1, mm2l2, mm2mid, mm2bot);
+
+            }
+            else if (scs == 2)
+            {
+                grpALLTRU(groupBox3);
+                forTwo_Lef1_rig2(mm2l1, mm2r2);
+            }
+            else if (scs == 3)
+            {
+                grpALLTRU(groupBox3);
+                forThree_lef1_lef2(mm2l1, mm2l2);
+            }
+            else if (scs == 4)
+            {
+                grpALLTRU(groupBox3);
+                forFour_top_lef2_bot(mm2top, mm2l2, mm2bot);
+            }
+            else if (scs == 5)
+            {
+                grpALLTRU(groupBox3);
+                forFive_right1_lef2(mm2r1, mm2l2);
+            }
+            else if (scs == 6)
+            {
+                grpALLTRU(groupBox3);
+                forSix_right1(mm2r1);
+            }
+            else if (scs == 7)
+            {
+                grpALLTRU(groupBox3);
+                forSeven_lef11_lef2_mid_bot(mm2l1, mm2l2, mm2mid, mm2bot);
+            }
+            else if (scs == 8)
+            {
+                grpALLTRU(groupBox3);
+                grpALLTRU(groupBox3);
+            }
+            else if (scs == 9)
+            {
+                grpALLTRU(groupBox3);
+                forNine_lef2_bot(mm2l2, mm2bot);
+            }
         }
 
         private void hh1() //function for first column for hours
         {
             mysec = DateTime.Now.ToString("hh");
-            scs = Convert.ToInt32(mysec.Substring(mysec.Length-1));
+            scs = Convert.ToInt32(mysec.Substring(0,1));
+
+            if (scs == 0)
+            {
+                grpALLTRU(groupBox1);
+                forZero_mid(hr1_mid_btn);
+            }
+            else if (scs == 1)
+            {
+                grpALLTRU(groupBox1);
+                forOne_Top_Left1_Left2_MID_BOT(hr1_top_btn,hr1_left1_btn,hr1_left2_btn,hr1_mid_btn,hr1_bot_btn);
+            }
+            else if (scs == 2)
+            {
+                grpALLTRU(groupBox1);
+                forTwo_Lef1_rig2(hr1_left1_btn,hr1_right2_btn);
+            }
+            else if (scs == 3)
+            {
+                grpALLTRU(groupBox1);
+                forThree_lef1_lef2(hr1_left1_btn,hr1_left2_btn);
+            }
+            else if (scs == 4)
+            {
+                grpALLTRU(groupBox1);
+                forFour_top_lef2_bot(hr1_top_btn,hr1_left2_btn,hr1_bot_btn);
+            }
+            else if (scs == 5)
+            {
+                grpALLTRU(groupBox1);
+                forFive_right1_lef2(hr1_right1_btn,hr1_left2_btn);
+            }
+            else if (scs == 6)
+            {
+                grpALLTRU(groupBox2);
+                forSix_right1(hr1_right1_btn);
+            }
+            else if (scs == 7)
+            {
+                grpALLTRU(groupBox1);
+                forSeven_lef11_lef2_mid_bot(hr1_left1_btn,hr1_left2_btn,hr1_mid_btn,hr1_bot_btn);
+            }
+            else if (scs == 8)
+            {
+                grpALLTRU(groupBox1);
+                
+            }
+            else if (scs == 9)
+            {
+                grpALLTRU(groupBox1);
+                forNine_lef2_bot(hr1_left2_btn,hr1_bot_btn);
+            }
         }
         private void hh2() //function for second column for hours
         {
             mysec = DateTime.Now.ToString("hh");
-            scs = Convert.ToInt32(mysec.Substring(0, 1));
+            scs = Convert.ToInt32(mysec.Substring(mysec.Length-1));
+
+            if (scs == 0)
+            {
+                grpALLTRU(groupBox2);
+                forZero_mid(hr2_mid_btn);
+            }
+            else if (scs == 1)
+            {
+                grpALLTRU(groupBox2);
+                forOne_Top_Left1_Left2_MID_BOT(hr2_top_btn,hr2_lef1_btn,hr2_lef2_btn,hr2_mid_btn,hr2_bot_btn);
+            }
+            else if (scs == 2)
+            {
+                grpALLTRU(groupBox2);
+                forTwo_Lef1_rig2(hr2_lef1_btn,hr2_rig2_btn);
+            }
+            else if (scs == 3)
+            {
+                grpALLTRU(groupBox2);
+                forThree_lef1_lef2(hr2_lef1_btn,hr2_lef2_btn);
+            }
+            else if (scs == 4)
+            {
+                grpALLTRU(groupBox2);
+                forFour_top_lef2_bot(hr2_top_btn,hr2_lef2_btn,hr2_bot_btn);
+            }
+            else if (scs == 5)
+            {
+                grpALLTRU(groupBox2);
+                forFive_right1_lef2(hr2_rig1_btn,hr2_lef2_btn);
+            }
+            else if (scs == 6)
+            {
+                grpALLTRU(groupBox2);
+                forSix_right1(hr2_rig1_btn);
+            }
+            else if (scs == 7)
+            {
+                grpALLTRU(groupBox2);
+                forSeven_lef11_lef2_mid_bot(hr2_lef1_btn,hr2_lef2_btn,hr2_mid_btn,hr2_bot_btn);
+            }
+            else if (scs == 8)
+            {
+                grpALLTRU(groupBox2);
+
+            }
+            else if (scs == 9)
+            {
+                grpALLTRU(groupBox2);
+                forNine_lef2_bot(hr2_lef2_btn,hr2_bot_btn);
+            }
         }
-    
-    
+
+        private void hr2_rig1_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
