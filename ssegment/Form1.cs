@@ -25,7 +25,7 @@ namespace ssegment
         }
         private void vis(Button sen1) //function to disable visibility of a called button 
         {
-            sen1.Visible = false;
+            sen1.BackColor = Color.Black;
         }
         private void ChangeLeave(Button sender) //function to change the  backcolor of called button
         {
@@ -40,7 +40,7 @@ namespace ssegment
             {
                 if (xx is Button)
                 {
-                    xx.Visible = true;
+                    xx.BackColor = Color.BlueViolet;
                 }
             }
         }
@@ -53,6 +53,7 @@ namespace ssegment
             vis(sender3);
             vis(sender4);
         }
+
         private void forTwo_Lef1_rig2(Button sen1, Button sen2)
         {
 
@@ -111,12 +112,48 @@ namespace ssegment
         // if you are wondering why theres  no function for 8, theres no buttons in segments needed to disable visibility
         private void Form1_Load(object sender, EventArgs e)
         {
-         //codes to run when program starts
+            //codes to run when program starts
+            label1.Text = DateTime.Now.ToString();
+            this.BackColor = Color.Black;
+            foreach (Control xx in groupBox5.Controls)
+            {
+                if (xx is Button)
+                {
+                    xx.BackColor = Color.Green;
+                }
+            }
+            foreach (Control xx in groupBox6.Controls)
+            {
+                if (xx is Button)
+                {
+                    xx.BackColor = Color.Green;
+                }
+            }
+            foreach (Control xx in groupBox4.Controls)
+            {
+                if (xx is Button)
+                {
+                    xx.BackColor = Color.Blue;
+                }
+            }
+            foreach (Control xx in groupBox3.Controls)
+            {
+                if (xx is Button)
+                {
+                    xx.BackColor = Color.Blue;
+                }
+            }
         }
 
-        private void hr1_top_btn_MouseEnter(object sender, EventArgs e)
+        private  void btnMouseEnter(Form1 x, EventArgs e)
         {
-            ChangeEnter(hr1_top_btn);
+            foreach (Control xx in x.Controls)
+            {
+                if(xx is Button)
+                {
+                    xx.BackColor = Color.Orange;
+                }
+            }
         }
 
         private void hr1_top_btn_MouseLeave(object sender, EventArgs e)
@@ -126,7 +163,7 @@ namespace ssegment
 
         private void hr1_left1_btn_MouseEnter(object sender, EventArgs e)
         {
-            ChangeEnter(hr1_left1_btn);
+            ((Button)sender).BackColor = Color.Cyan; ;
         }
 
         private void hr1_left1_btn_MouseLeave(object sender, EventArgs e)
@@ -134,7 +171,26 @@ namespace ssegment
             ChangeLeave(hr1_left1_btn);
         }
 
-
+        private void allbtns(object sender, System.EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.BackColor != Color.BlueViolet)
+            {
+                btn.BackColor = Color.Cyan;
+            }
+            
+           
+        }
+        private void allbtnsLEAVE(object sender, System.EventArgs e)
+        {
+            Button btn = (Button)sender;
+            if (btn.BackColor == Color.Cyan)
+            {
+                btn.BackColor = Color.Black;
+            }
+           
+            
+        }
         private void hr1_left2_btn_MouseEnter(object sender, EventArgs e)
         {
             ChangeEnter(hr1_left2_btn);
@@ -190,6 +246,7 @@ namespace ssegment
         int scs = 0;  //stores the value of time(hh,mm,ss)
         private void timer1_Tick(object sender, EventArgs e)
         {
+            label1.Text = DateTime.Now.ToString();
             cnt += 1; //increments for time
             ss2(); //calls the function for second column for seconds
             ss1(); //calls the function for first column for seconds
@@ -535,6 +592,31 @@ namespace ssegment
         }
 
         private void hr2_rig1_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hr2_top_btn_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hr2_lef1_btn_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hr2_lef2_btn_MouseEnter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hr2_bot_btn_Click(object sender, EventArgs e)
         {
 
         }

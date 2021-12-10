@@ -84,6 +84,7 @@ namespace ssegment
             this.ss1r2 = new System.Windows.Forms.Button();
             this.ss1bot = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -108,8 +109,8 @@ namespace ssegment
             this.hr1_top_btn.Size = new System.Drawing.Size(79, 36);
             this.hr1_top_btn.TabIndex = 1;
             this.hr1_top_btn.UseVisualStyleBackColor = false;
-            this.hr1_top_btn.MouseEnter += new System.EventHandler(this.hr1_top_btn_MouseEnter);
-            this.hr1_top_btn.MouseLeave += new System.EventHandler(this.hr1_top_btn_MouseLeave);
+            this.hr1_top_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr1_top_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr1_left1_btn
             // 
@@ -121,8 +122,8 @@ namespace ssegment
             this.hr1_left1_btn.Size = new System.Drawing.Size(40, 167);
             this.hr1_left1_btn.TabIndex = 2;
             this.hr1_left1_btn.UseVisualStyleBackColor = false;
-            this.hr1_left1_btn.MouseEnter += new System.EventHandler(this.hr1_left1_btn_MouseEnter);
-            this.hr1_left1_btn.MouseLeave += new System.EventHandler(this.hr1_left1_btn_MouseLeave);
+            this.hr1_left1_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr1_left1_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr1_right1_btn
             // 
@@ -134,8 +135,8 @@ namespace ssegment
             this.hr1_right1_btn.Size = new System.Drawing.Size(40, 167);
             this.hr1_right1_btn.TabIndex = 3;
             this.hr1_right1_btn.UseVisualStyleBackColor = false;
-            this.hr1_right1_btn.MouseEnter += new System.EventHandler(this.hr1_right1_btn_MouseEnter);
-            this.hr1_right1_btn.MouseLeave += new System.EventHandler(this.hr1_right1_btn_MouseLeave);
+            this.hr1_right1_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr1_right1_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr1_mid_btn
             // 
@@ -147,8 +148,8 @@ namespace ssegment
             this.hr1_mid_btn.Size = new System.Drawing.Size(79, 36);
             this.hr1_mid_btn.TabIndex = 4;
             this.hr1_mid_btn.UseVisualStyleBackColor = false;
-            this.hr1_mid_btn.MouseEnter += new System.EventHandler(this.hr1_mid_btn_MouseEnter);
-            this.hr1_mid_btn.MouseLeave += new System.EventHandler(this.hr1_mid_btn_MouseLeave);
+            this.hr1_mid_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr1_mid_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr1_left2_btn
             // 
@@ -160,8 +161,8 @@ namespace ssegment
             this.hr1_left2_btn.Size = new System.Drawing.Size(40, 167);
             this.hr1_left2_btn.TabIndex = 5;
             this.hr1_left2_btn.UseVisualStyleBackColor = false;
-            this.hr1_left2_btn.MouseEnter += new System.EventHandler(this.hr1_left2_btn_MouseEnter);
-            this.hr1_left2_btn.MouseLeave += new System.EventHandler(this.hr1_left2_btn_MouseLeave);
+            this.hr1_left2_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr1_left2_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr1_right2_btn
             // 
@@ -173,8 +174,8 @@ namespace ssegment
             this.hr1_right2_btn.Size = new System.Drawing.Size(40, 167);
             this.hr1_right2_btn.TabIndex = 6;
             this.hr1_right2_btn.UseVisualStyleBackColor = false;
-            this.hr1_right2_btn.MouseEnter += new System.EventHandler(this.hr1_right2_btn_MouseEnter);
-            this.hr1_right2_btn.MouseLeave += new System.EventHandler(this.hr1_right2_btn_MouseLeave);
+            this.hr1_right2_btn.MouseEnter += new System.EventHandler(this.allbtns  );
+            this.hr1_right2_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr1_bot_btn
             // 
@@ -186,8 +187,8 @@ namespace ssegment
             this.hr1_bot_btn.Size = new System.Drawing.Size(105, 36);
             this.hr1_bot_btn.TabIndex = 7;
             this.hr1_bot_btn.UseVisualStyleBackColor = false;
-            this.hr1_bot_btn.MouseEnter += new System.EventHandler(this.hr1_bot_btn_MouseEnter);
-            this.hr1_bot_btn.MouseLeave += new System.EventHandler(this.hr1_bot_btn_MouseLeave);
+            this.hr1_bot_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr1_bot_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr2_bot_btn
             // 
@@ -199,6 +200,10 @@ namespace ssegment
             this.hr2_bot_btn.Size = new System.Drawing.Size(105, 36);
             this.hr2_bot_btn.TabIndex = 14;
             this.hr2_bot_btn.UseVisualStyleBackColor = false;
+            this.hr2_bot_btn.Click += new System.EventHandler(this.hr2_bot_btn_Click);
+            this.hr2_bot_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr2_bot_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
+
             // 
             // hr2_rig2_btn
             // 
@@ -210,6 +215,8 @@ namespace ssegment
             this.hr2_rig2_btn.Size = new System.Drawing.Size(40, 167);
             this.hr2_rig2_btn.TabIndex = 13;
             this.hr2_rig2_btn.UseVisualStyleBackColor = false;
+            this.hr2_rig2_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr2_rig2_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr2_lef2_btn
             // 
@@ -221,6 +228,8 @@ namespace ssegment
             this.hr2_lef2_btn.Size = new System.Drawing.Size(40, 167);
             this.hr2_lef2_btn.TabIndex = 12;
             this.hr2_lef2_btn.UseVisualStyleBackColor = false;
+            this.hr2_lef2_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr2_lef2_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr2_mid_btn
             // 
@@ -232,6 +241,8 @@ namespace ssegment
             this.hr2_mid_btn.Size = new System.Drawing.Size(79, 36);
             this.hr2_mid_btn.TabIndex = 11;
             this.hr2_mid_btn.UseVisualStyleBackColor = false;
+            this.hr2_mid_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr2_mid_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr2_rig1_btn
             // 
@@ -244,6 +255,8 @@ namespace ssegment
             this.hr2_rig1_btn.TabIndex = 10;
             this.hr2_rig1_btn.UseVisualStyleBackColor = false;
             this.hr2_rig1_btn.Click += new System.EventHandler(this.hr2_rig1_btn_Click);
+            this.hr2_rig1_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr2_rig1_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr2_lef1_btn
             // 
@@ -255,6 +268,8 @@ namespace ssegment
             this.hr2_lef1_btn.Size = new System.Drawing.Size(40, 167);
             this.hr2_lef1_btn.TabIndex = 9;
             this.hr2_lef1_btn.UseVisualStyleBackColor = false;
+            this.hr2_lef1_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr2_lef1_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // hr2_top_btn
             // 
@@ -266,6 +281,8 @@ namespace ssegment
             this.hr2_top_btn.Size = new System.Drawing.Size(79, 36);
             this.hr2_top_btn.TabIndex = 8;
             this.hr2_top_btn.UseVisualStyleBackColor = false;
+            this.hr2_top_btn.MouseEnter += new System.EventHandler(this.allbtns);
+            this.hr2_top_btn.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // button1
             // 
@@ -371,6 +388,8 @@ namespace ssegment
             this.mm2l1.Size = new System.Drawing.Size(40, 167);
             this.mm2l1.TabIndex = 9;
             this.mm2l1.UseVisualStyleBackColor = false;
+            this.mm2l1.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm2l1.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm2r2
             // 
@@ -382,6 +401,8 @@ namespace ssegment
             this.mm2r2.Size = new System.Drawing.Size(40, 167);
             this.mm2r2.TabIndex = 13;
             this.mm2r2.UseVisualStyleBackColor = false;
+            this.mm2r2.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm2r2.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm2bot
             // 
@@ -393,6 +414,8 @@ namespace ssegment
             this.mm2bot.Size = new System.Drawing.Size(105, 36);
             this.mm2bot.TabIndex = 14;
             this.mm2bot.UseVisualStyleBackColor = false;
+            this.mm2bot.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm2bot.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm2l2
             // 
@@ -404,6 +427,8 @@ namespace ssegment
             this.mm2l2.Size = new System.Drawing.Size(40, 167);
             this.mm2l2.TabIndex = 12;
             this.mm2l2.UseVisualStyleBackColor = false;
+            this.mm2l2.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm2l2.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm2mid
             // 
@@ -415,6 +440,8 @@ namespace ssegment
             this.mm2mid.Size = new System.Drawing.Size(79, 36);
             this.mm2mid.TabIndex = 11;
             this.mm2mid.UseVisualStyleBackColor = false;
+            this.mm2mid.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm2mid.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm2r1
             // 
@@ -426,6 +453,8 @@ namespace ssegment
             this.mm2r1.Size = new System.Drawing.Size(40, 167);
             this.mm2r1.TabIndex = 10;
             this.mm2r1.UseVisualStyleBackColor = false;
+            this.mm2r1.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm2r1.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm2top
             // 
@@ -437,6 +466,8 @@ namespace ssegment
             this.mm2top.Size = new System.Drawing.Size(79, 36);
             this.mm2top.TabIndex = 8;
             this.mm2top.UseVisualStyleBackColor = false;
+            this.mm2top.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm2top.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // groupBox4
             // 
@@ -464,6 +495,8 @@ namespace ssegment
             this.mm1top.Size = new System.Drawing.Size(79, 36);
             this.mm1top.TabIndex = 1;
             this.mm1top.UseVisualStyleBackColor = false;
+            this.mm1top.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm1top.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm1l1
             // 
@@ -475,6 +508,8 @@ namespace ssegment
             this.mm1l1.Size = new System.Drawing.Size(40, 167);
             this.mm1l1.TabIndex = 2;
             this.mm1l1.UseVisualStyleBackColor = false;
+            this.mm1l1.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm1l1.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm1r1
             // 
@@ -486,6 +521,8 @@ namespace ssegment
             this.mm1r1.Size = new System.Drawing.Size(40, 167);
             this.mm1r1.TabIndex = 3;
             this.mm1r1.UseVisualStyleBackColor = false;
+            this.mm1r1.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm1r1.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm1mid
             // 
@@ -497,6 +534,8 @@ namespace ssegment
             this.mm1mid.Size = new System.Drawing.Size(79, 36);
             this.mm1mid.TabIndex = 4;
             this.mm1mid.UseVisualStyleBackColor = false;
+            this.mm1mid.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm1mid.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm1l2
             // 
@@ -508,6 +547,9 @@ namespace ssegment
             this.mm1l2.Size = new System.Drawing.Size(40, 167);
             this.mm1l2.TabIndex = 5;
             this.mm1l2.UseVisualStyleBackColor = false;
+
+            this.mm1l2.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm1l2.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm1r2
             // 
@@ -519,6 +561,8 @@ namespace ssegment
             this.mm1r2.Size = new System.Drawing.Size(40, 167);
             this.mm1r2.TabIndex = 6;
             this.mm1r2.UseVisualStyleBackColor = false;
+            this.mm1r2.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm1r2.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // mm1bot
             // 
@@ -530,6 +574,8 @@ namespace ssegment
             this.mm1bot.Size = new System.Drawing.Size(105, 36);
             this.mm1bot.TabIndex = 7;
             this.mm1bot.UseVisualStyleBackColor = false;
+            this.mm1bot.MouseEnter += new System.EventHandler(this.allbtns);
+            this.mm1bot.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // groupBox5
             // 
@@ -556,6 +602,9 @@ namespace ssegment
             this.ss2l1.Size = new System.Drawing.Size(40, 167);
             this.ss2l1.TabIndex = 9;
             this.ss2l1.UseVisualStyleBackColor = false;
+
+            this.ss2l1.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss2l1.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss2r2
             // 
@@ -567,6 +616,8 @@ namespace ssegment
             this.ss2r2.Size = new System.Drawing.Size(40, 167);
             this.ss2r2.TabIndex = 13;
             this.ss2r2.UseVisualStyleBackColor = false;
+                this.ss2r2.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss2r2.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss2bot
             // 
@@ -578,6 +629,8 @@ namespace ssegment
             this.ss2bot.Size = new System.Drawing.Size(105, 36);
             this.ss2bot.TabIndex = 14;
             this.ss2bot.UseVisualStyleBackColor = false;
+                this.ss2bot.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss2bot.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss2l2
             // 
@@ -589,6 +642,8 @@ namespace ssegment
             this.ss2l2.Size = new System.Drawing.Size(40, 167);
             this.ss2l2.TabIndex = 12;
             this.ss2l2.UseVisualStyleBackColor = false;
+            this.ss2l2.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss2l2.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss2mid
             // 
@@ -600,6 +655,8 @@ namespace ssegment
             this.ss2mid.Size = new System.Drawing.Size(79, 36);
             this.ss2mid.TabIndex = 11;
             this.ss2mid.UseVisualStyleBackColor = false;
+            this.ss2mid.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss2mid.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss2r1
             // 
@@ -611,6 +668,8 @@ namespace ssegment
             this.ss2r1.Size = new System.Drawing.Size(40, 167);
             this.ss2r1.TabIndex = 10;
             this.ss2r1.UseVisualStyleBackColor = false;
+            this.ss2r1.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss2r1.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss2top
             // 
@@ -622,6 +681,8 @@ namespace ssegment
             this.ss2top.Size = new System.Drawing.Size(79, 36);
             this.ss2top.TabIndex = 8;
             this.ss2top.UseVisualStyleBackColor = false;
+            this.ss2top.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss2top.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // groupBox6
             // 
@@ -638,6 +699,7 @@ namespace ssegment
             this.groupBox6.Size = new System.Drawing.Size(191, 365);
             this.groupBox6.TabIndex = 79;
             this.groupBox6.TabStop = false;
+            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
             // 
             // ss1top
             // 
@@ -649,6 +711,8 @@ namespace ssegment
             this.ss1top.Size = new System.Drawing.Size(79, 36);
             this.ss1top.TabIndex = 1;
             this.ss1top.UseVisualStyleBackColor = false;
+            this.ss1top.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss1top.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss1l1
             // 
@@ -660,6 +724,8 @@ namespace ssegment
             this.ss1l1.Size = new System.Drawing.Size(40, 167);
             this.ss1l1.TabIndex = 2;
             this.ss1l1.UseVisualStyleBackColor = false;
+            this.ss1l1.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss1l1.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss1r1
             // 
@@ -671,6 +737,8 @@ namespace ssegment
             this.ss1r1.Size = new System.Drawing.Size(40, 167);
             this.ss1r1.TabIndex = 3;
             this.ss1r1.UseVisualStyleBackColor = false;
+            this.ss1r1.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss1r1.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss1mid
             // 
@@ -682,6 +750,8 @@ namespace ssegment
             this.ss1mid.Size = new System.Drawing.Size(79, 36);
             this.ss1mid.TabIndex = 4;
             this.ss1mid.UseVisualStyleBackColor = false;
+            this.ss1mid.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss1mid.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss1l2
             // 
@@ -693,6 +763,8 @@ namespace ssegment
             this.ss1l2.Size = new System.Drawing.Size(40, 167);
             this.ss1l2.TabIndex = 5;
             this.ss1l2.UseVisualStyleBackColor = false;
+            this.ss1l2.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss1l2.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss1r2
             // 
@@ -704,6 +776,9 @@ namespace ssegment
             this.ss1r2.Size = new System.Drawing.Size(40, 167);
             this.ss1r2.TabIndex = 6;
             this.ss1r2.UseVisualStyleBackColor = false;
+
+            this.ss1r2.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss1r2.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // ss1bot
             // 
@@ -715,15 +790,28 @@ namespace ssegment
             this.ss1bot.Size = new System.Drawing.Size(105, 36);
             this.ss1bot.TabIndex = 7;
             this.ss1bot.UseVisualStyleBackColor = false;
+            this.ss1bot.MouseEnter += new System.EventHandler(this.allbtns);
+            this.ss1bot.MouseLeave += new System.EventHandler(this.allbtnsLEAVE);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 9);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(12, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(326, 21);
             this.label1.TabIndex = 81;
             this.label1.Text = "coyright  2021 steven john sunga";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(12, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(326, 21);
+            this.label2.TabIndex = 82;
+            this.label2.Text = "coyright  2021 steven john sunga";
             // 
             // Form1
             // 
@@ -731,6 +819,7 @@ namespace ssegment
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1298, 500);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
@@ -815,6 +904,7 @@ namespace ssegment
         private System.Windows.Forms.Button ss1r2;
         private System.Windows.Forms.Button ss1bot;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
